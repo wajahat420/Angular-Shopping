@@ -1,0 +1,13 @@
+<div 
+    (click)="clicked.emit('')" 
+    class="recipe"
+    [class.active]="active"
+>
+    <div>
+        <h2>{{ recipeItem.name }}</h2>
+        <p>{{ recipeItem.description }}</p>
+    </div>
+
+    <img [src]='recipeItem.imgURL' alt="">
+    <!-- <p>{{ recipeItem.imgURL }}</p> -->
+</div>

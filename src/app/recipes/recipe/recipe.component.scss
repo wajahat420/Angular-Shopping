@@ -1,0 +1,33 @@
+.recipe{
+    flex-direction: row;
+    display: flex;
+    border: 1px solid #d7d7d7;
+    padding:  12px;
+    border-radius: 5px;
+
+
+    h2,p{
+        margin: 0px;
+    }
+    p{
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    h2{
+        font-weight: 600;
+        font-family: serif;
+        font-size: 22px;
+    }
+    img{
+        width: 80px;
+        margin-left: auto;
+        height: 55px;
+    }
+}
+.recipe:hover{
+    cursor: pointer;
+}
+.active{
+    background-color: rgb(65, 65, 255);
+    color: white;
+}
