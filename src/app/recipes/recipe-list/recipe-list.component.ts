@@ -11,7 +11,7 @@ export class RecipeListComponent implements OnInit {
   clickedIndex:number = -1
 
   constructor() { }
-
+        
   ngOnInit(): void {
     console.log('RECIPE LIST', this.allRecipes)
   }
