@@ -1,5 +1,7 @@
 <div class="main-recipes">
     <app-button color="white" name="New Recipe" bg="#099809"></app-button>
-    <app-recipe-list [allRecipes]="recipes"></app-recipe-list>
-    <app-recipe-detail></app-recipe-detail>
+    <div class="main-div">
+        <app-recipe-list (clicked)="clickedRecipe = $event" [allRecipes]="recipes"></app-recipe-list>
+        <app-recipe-detail [recipeData]="clickedRecipe"></app-recipe-detail>
+    </div>
 </div>
